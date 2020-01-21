@@ -1,5 +1,5 @@
 # Base Image (Node v12) and creates a new container for it
-FROM node:12.4-alpinex
+FROM node:12.4-alpine
 LABEL maintainer="nnthanh101@gmail.com"
 
 RUN mkdir /app
@@ -14,7 +14,7 @@ RUN npm ci --only=production
 COPY . .
 
 # Build the app
-RUN npm run build
+# RUN npm run build
 
 # Specify port app runs on
 EXPOSE 3000

@@ -3,7 +3,7 @@ const express = require('express');
 
 const app = express();
 
-const PORT = 8080;
+const PORT = 3000;
 
 app.listen(PORT,()=>{
     console.log(`Docker for NodeJS on AWS Fargate is listening on PORT: ${PORT}`);
