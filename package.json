@@ -1,0 +1,31 @@
+{
+  "name": "docker-node",
+  "version": "1.0.0",
+  "description": "Running a serverless Node.js app on AWS Fargate",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon --inspect=0.0.0.0 src/app.js",
+    "test": "node test/app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nnthanh101@github.com/nnthanh101/docker-node.git"
+  },
+  "keywords": [
+    "node.js",
+    "docker",
+    "fargate"
+  ],
+  "author": "nnthanh101@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnthanh101/docker-node/issues"
+  },
+  "homepage": "https://github.com/nnthanh101/docker-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2"
+  }
+}
